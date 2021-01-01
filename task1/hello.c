@@ -12,9 +12,9 @@ static int __init hello_world(void) {
     return 0;
 }
 
-static void __exit hello_world(void) {
+static void __exit goodbye_world(void) {
     printk(KERN_DEBUG "Goodbye World!\n");
 }
 
 module_init(hello_world);
-module_exit(hello_world);
+module_exit(goodbye_world);
